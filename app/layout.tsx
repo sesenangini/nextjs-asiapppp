@@ -1,10 +1,19 @@
-export default function Page() {
-  const onClick = (e: React.MouseEvent) => e.preventDefault(); // belum ada tujuan
+// app/layout.tsx
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Promo Resmi',
+  description: 'Landing sederhana untuk kebutuhan iklan.',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <main>
-      <a href="#" onClick={onClick}>
-        <img src="/image/triplek.jpg" alt="Beli Sekarang" style={{display:'block',width:'100%'}} />
-      </a>
-    </main>
+    <html lang="id">
+      <body style={{ margin: 0, padding: 0 }}>{children}</body>
+    </html>
   );
 }
