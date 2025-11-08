@@ -1,13 +1,19 @@
 // app/page.tsx
-import type React from 'react';
+import Link from 'next/link';
 
-// ==== UBAH DI SINI JIKA PERLU ====
-const IMG_PATH = '/image/banner.jpg'; // letakkan file di /public/image/banner.jpg
-const ALT_TEXT = 'Promo Terbaru';     // teks alternatif gambar (penting untuk iklan/SEO)
-const LINK     = '';                   // kosongkan dulu; isi nanti mis. "https://domain-tujuanmu.com"
-// contoh WA jika sudah siap:
-// const LINK = 'https://wa.me/62812xxxxxxx?text=Halo, saya tertarik.';
-// ==================================
+export default function Page() {
+  return (
+    <main>
+      <Link href="/promo"> {/* halaman internal mis. /promo */}
+        <img
+          src="https://i.postimg.cc/HkwZ8C9Q/sabun.jpg"
+          alt="Promo Terbaru"
+          style={{ display: 'block', width: '100%', height: 'auto' }}
+        />
+      </Link>
+    </main>
+  );
+}
 
 export default function Page() {
   const onClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
