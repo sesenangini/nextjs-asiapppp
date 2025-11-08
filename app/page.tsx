@@ -1,19 +1,11 @@
 // app/page.tsx
-import Link from 'next/link';
+import type React from 'react';
 
-export default function Page() {
-  return (
-    <main>
-      <Link href="/promo"> {/* halaman internal mis. /promo */}
-        <img
-          src="https://i.postimg.cc/HkwZ8C9Q/sabun.jpg"
-          alt="Promo Terbaru"
-          style={{ display: 'block', width: '100%', height: 'auto' }}
-        />
-      </Link>
-    </main>
-  );
-}
+// ====== Konfigurasi singkat ======
+const IMG_URL = 'https://i.postimg.cc/HkwZ8C9Q/sabun.jpg'; // gambar kamu
+const ALT_TEXT = 'Promo Sabun Terbaru';                    // alt text (ubah kalau perlu)
+const LINK = ''; // isi tujuan link; biarkan kosong dulu / isi mis. "https://domainmu.com"
+// =================================
 
 export default function Page() {
   const onClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -24,7 +16,7 @@ export default function Page() {
     <main>
       <a href={LINK || '#'} onClick={onClick} rel="noopener">
         <img
-          src={IMG_PATH}
+          src={IMG_URL}
           alt={ALT_TEXT}
           style={{ display: 'block', width: '100%', height: 'auto' }}
         />
