@@ -3,7 +3,7 @@ import type React from 'react';
 
 // ====== Konfigurasi singkat ======
 const IMG_URL = 'https://i.postimg.cc/HkwZ8C9Q/sabun.jpg'; // gambar kamu
-const ALT_TEXT = 'Promo Sabun Terbaru';                    // alt text (ubah kalau perlu)
+const ALT_TEXT = 'Promo Sabun Terbaru';                    // alt text
 const LINK = ''; // isi tujuan link; biarkan kosong dulu / isi mis. "https://domainmu.com"
 // =================================
 
