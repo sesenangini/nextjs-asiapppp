@@ -1,15 +1,16 @@
-// app/page.tsx
+'use client';
+
 import type React from 'react';
 
 // ====== Konfigurasi singkat ======
-const IMG_URL = 'https://i.postimg.cc/HkwZ8C9Q/sabun.jpg'; // gambar kamu
-const ALT_TEXT = 'Promo Sabun Terbaru';                    // alt text
-const LINK = ''; // isi tujuan link; biarkan kosong dulu / isi mis. "https://domainmu.com"
+const IMG_URL = 'https://i.postimg.cc/HkwZ8C9Q/sabun.jpg';
+const ALT_TEXT = 'Promo Sabun Terbaru';
+const LINK = ''; // kosong dulu / isi nanti tujuan
 // =================================
 
 export default function Page() {
   const onClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (!LINK) e.preventDefault(); // kalau LINK kosong, jangan pindah
+    if (!LINK) e.preventDefault(); // kalau kosong, tidak pindah
   };
 
   return (
