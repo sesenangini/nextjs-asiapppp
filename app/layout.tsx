@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beli Sekarang!</title>
-    
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        img{
-            margin: auto;
-            max-width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <a href="/"><img src="image/triplek.jpg"></a>
-</body>
-</html>
+// app/layout.tsx
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Beli Sekarang!',
+  description: 'Landing sederhana – klik gambar untuk menuju tautan.',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="id">
+      <body style={{ margin: 0, padding: 0 }}>{children}</body>
+    </html>
+  );
+}
