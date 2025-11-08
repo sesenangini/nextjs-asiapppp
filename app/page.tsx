@@ -5,7 +5,7 @@ import type React from 'react';
 // ====== Konfigurasi singkat ======
 const IMG_URL = 'https://i.postimg.cc/HkwZ8C9Q/sabun.jpg';
 const ALT_TEXT = 'Promo Sabun Terbaru';
-const LINK = ''; // kosong dulu / isi nanti tujuan
+const LINK = 'https://heylink.me/kitajitucun/'; // kosong dulu / isi nanti tujuan
 // =================================
 
 export default function Page() {
